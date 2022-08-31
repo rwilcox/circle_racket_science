@@ -15,10 +15,13 @@
   "jobs" (hash
         "build" (hash
             "executor" "default"
-            "steps" "checkout"
-            "run" (hash
+            "steps" (list
+               "checkout"
+               (hash "run" (hash
                 "name"    "echo"
                 "command" (string-join '("echo \"hello\"" "uptime") "; ")
+                 )
+               )
              )
         )
    )
