@@ -15,7 +15,7 @@
   "jobs" (hash
         "build" (hash
             "docker" (hash
-                      "image" "cimg/base")
+                      "image" "cimg/base:stable")
             "steps" (list
                "checkout"
                (hash "run" (hash
