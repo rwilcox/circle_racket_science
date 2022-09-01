@@ -14,7 +14,8 @@
   "orbs"   (hash "node" "circleci/node@5.0.1")
   "jobs" (hash
         "build" (hash
-            "executor" "default"
+            "docker" (hash
+                      "image" "cimg/base")
             "steps" (list
                "checkout"
                (hash "run" (hash

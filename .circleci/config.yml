@@ -25,7 +25,9 @@ jobs:
          command: raco pkg install yaml
       - run:
           name: Generate new workflow
-          command: racket circle-generation.rkt > new_workflow.yml
+          command: |
+            racket circle-generation.rkt > new_workflow.yml
+            echo new_workflow.yml
      - continuation/continue:
           configuration_path: new_workflow.yml
           parameters: {}
