@@ -42,6 +42,3 @@ workflows:
   setup:
     jobs:
       - setup
-  say-hello-workflow:
-    jobs:
-      - say-hello
